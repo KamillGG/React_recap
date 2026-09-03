@@ -16,7 +16,7 @@ function App() {
     const difference = count - prevcount
     if(difference!==0){
 
-      setHistory((prevHistory)=>[...prevHistory,difference])
+      setHistory((prevHistory)=>[difference, ...prevHistory])
       setPrevCount(count)
     }
   },[count])
